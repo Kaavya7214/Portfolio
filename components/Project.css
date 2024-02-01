@@ -1,0 +1,59 @@
+.projects-section {
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: #1a1919;
+    padding: 100px 0;
+    text-align: center;
+    margin-bottom: -20px; /* Adjust as needed */
+  }
+  
+  .project-list {
+    display: flex;
+    justify-content: space-around;
+    margin-top: -20px; /* Adjust as needed */
+  }
+  
+  .project-box {
+    flex: 0 0 30%;
+    border: 5px solid #212020;
+    border-radius: 25px;
+    padding: 50px;
+    margin: 10px;
+    background-color: rgba(197, 192, 192, 0.8); /* Adjust the transparency here */
+    text-align: left;
+    background-position: center;
+    background-size: cover;
+  }
+  
+  .project-content {
+    color: #1a1919;
+  }
+  
+  .project-box h3 {
+    font-size: 1.2rem;
+    margin: 0;
+    color: #1a1919;
+  }
+  
+  .project-box p {
+    margin: 10px 0;
+  }
+  
+  .project-box a {
+    text-decoration: none;
+    font-size: 24px;
+    font-weight: bold;
+    color: #0078d4;
+  }
+  
+  .project-box a:hover {
+    text-decoration: underline;
+  }
+  
+  .project-box h3[style*="color: white"] {
+    color: white;
+  }
+  
+  .project-box .project-content[style*="color: white"] {
+    color: white;
+  }

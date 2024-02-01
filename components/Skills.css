@@ -1,0 +1,50 @@
+.skills-container {
+    position: relative;
+    overflow: hidden;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 0; /* Remove the bottom margin */
+    color: #fff;
+  }
+  
+  .skills-heading {
+    color: #fff;
+    text-align: center;
+    font-size: 2.5em;
+    margin-bottom: 20px;
+  }
+  
+  .skills-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+                url('https://wallpaperset.com/w/full/4/7/7/170846.jpg') center/cover;
+    z-index: -1;
+  }
+  
+  .skills-list {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  
+  .skill-item {
+    background-color: #333;
+    color: #fff;
+    padding: 12px 18px;
+    margin: 8px;
+    border-radius: 8px;
+    font-size: 1.5em;
+    text-align: center;
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .skill-item:hover {
+    transform: scale(1.1);
+  }

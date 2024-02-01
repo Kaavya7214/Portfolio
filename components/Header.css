@@ -1,0 +1,129 @@
+/* Header.css */
+.header {
+  background-color: #333;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+  height: 100vh;
+  text-align: left;
+  position: relative;
+  overflow: hidden;
+}
+
+.menu-button {
+  cursor: pointer;
+}
+
+.top-right {
+  display: flex;
+  justify-content: flex-end;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.top-right button {
+  background: none;
+  border: none;
+  color: #fff;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.center-content {
+  display: flex;
+  flex-direction: column;
+}
+
+.center-content h1 {
+  margin: 0;
+  padding: 0;
+  font-size: 1.5rem;
+}
+
+.subtitle {
+  margin: 1rem 0;
+}
+
+.subtitle p {
+  margin: 0;
+  padding: 0;
+  font-size: 1.2rem;
+}
+
+.center-content p {
+  margin: 1rem 0;
+  font-size: 1.1rem;
+}
+
+.social-links {
+  order: 2;
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  @media (max-width: 576px) {
+    flex-direction: column;
+    justify-content: center;
+  }
+}
+
+.social-links a {
+  margin: 10px;
+  animation: fadein 2s ease-in-out forwards;
+  position: relative;
+  background-color: #333;
+  padding: 5px;
+  border-radius: 50%;
+}
+
+/* Adjusted the size of the social icons */
+.social-links a img {
+  max-width: 30px; /* Adjusted the size of the icons to 30px */
+  height: auto;
+}
+
+.social-links a[href^="https://github.com"] img,
+.social-links a[href^="mailto:"] img {
+  filter: invert(100%);
+}
+
+.social-links a[href^="https://github.com"] img {
+  max-width: 50px;
+  height: auto;
+}
+
+.social-links a[href^="https://www.linkedin.com"] img,
+.social-links a[href^="mailto:"] img {
+  max-width: 30px;
+  height: auto;
+}
+
+.right-content {
+  right: 0;
+  margin-right: 20px;
+  animation: fadeIn 2s ease-in-out forwards;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.right-content img {
+  max-width: 100%;
+  height: auto;
+  width: 200px;
+  border: 2px solid #fff;
+  clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+  object-fit: cover;
+  transition: transform 0.3s ease-in-out;
+}
+
+.right-content img:hover {
+  transform: scale(1.05);
+}
